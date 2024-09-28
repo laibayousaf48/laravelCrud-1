@@ -15,14 +15,14 @@
 <body>
    <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-9">
     <h1>All Users List</h1>
     @if(session('message'))
     <h6 class="alert alert-success">
         {{ session('message') }}
     </h6>
 @endif
-    <a href="/addUser" class="btn btn-success btn-sm mb-3">Add New</a>
+    <a href="/addUser" class="btn btn-success btn-sm mb-3 ">Add New</a>
             <table class="table table-bordered table-striped ">
                 <tr>
                     <th>Id</th>
@@ -41,10 +41,9 @@
                     <td> {{$user -> email}}</td>
                     <td> {{$user -> age}}</td>
                     <td> {{$user -> city}}</td>
-                    <td> <a href="{{route('viewUser', $user->id)}}" class="btn btn-primary btn-sm">View</a></td>
-                    <td> <a href="{{route('deleteUser', $user->id)}}" class="btn btn-danger btn-sm">Delete</a></td>
-                    <td> <a href="{{route('updatepage', $user->id)}}" class="btn btn-warning btn-sm">Update</a></td>
-                    {{-- <td> <button onclick="{{route('viewUser', $id)}}">View User</button></td> --}}
+                    <td class="text-center"> <a href="{{route('viewUser', $user->id)}}" class="btn btn-primary btn-sm">View</a></td>
+                    <td class="text-center"> <a href="{{route('deleteUser', $user->id)}}" class="btn btn-danger btn-sm">Delete</a></td>
+                    <td class="text-center"> <a href="{{route('updatepage', $user->id)}}" class="btn btn-warning btn-sm">Update</a></td>
                 </tr>
                 @endforeach
             </table>

@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-5">
+    <div class="container ">
+        <div class="row justify-content-center items-center">
+            <div class="col-5 card flex my-3 py-4">
                 <h1>Update User</h1>
                 <form action="{{route('updateUser', ['id' => $data->id])}}" method="post">
                     @csrf
