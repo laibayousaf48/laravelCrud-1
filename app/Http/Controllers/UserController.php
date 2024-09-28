@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
@@ -17,7 +18,13 @@ class UserController extends Controller
         $user = DB::table('users')->where('id', $id)->get();
         return view('user', ['data' => $user]);
     }
-    public function addUser(Request $req){
+    public function addUser(UserRequest $req){
+        // $req->validate([
+            // 'name' => 'required',
+            // 'email' => 'required|email|unique:users,email',
+            // 'age' => 'required|numeric|between:18,45',
+            // 'city' => 'required',
+        // ]);
         $user = DB::table('users')
         ->insert([
             'name' => $req->name,
