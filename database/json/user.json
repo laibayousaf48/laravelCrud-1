@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Laiba",
+        "email": "laiba@gmail.com",
+        "age": "23",
+        "city": "Lahore"
+    },
+    {
+        "name": "Salar",
+        "email": "salar@gmail.com",
+        "age": "24",
+        "city": "Islamabad"
+    },
+    {
+        "name": "Imama",
+        "email": "imama@gmail.com",
+        "age": "23",
+        "city": "Multan"
+    },
+    {
+        "name": "Faris",
+        "email": "faris@gmail.com",
+        "age": "36",
+        "city": "Karachi"
+    },
+    {
+        "name": "Adam",
+        "email": "adam@gmail.com",
+        "age": "23",
+        "city": "Lahore"
+    }
+]
